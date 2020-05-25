@@ -23,19 +23,27 @@ export default {
       series: [
         {
           name: "PRODUCT A",
-          data: [44, 55, 41, 67, 22, 43]
+          data: [
+            [1589932800000, 0],
+            [1590073200000, 1],
+            [1590105600000, 0]
+          ]
         },
         {
           name: "PRODUCT B",
-          data: [13, 23, 20, 8, 13, 27]
+          data: [
+            [1589932800000, 0],
+            [1590073200000, 0],
+            [1590105600000, 0]
+          ]
         },
         {
           name: "PRODUCT C",
-          data: [11, 17, 15, 15, 21, 14]
-        },
-        {
-          name: "PRODUCT D",
-          data: [21, 7, 25, 13, 22, 8]
+          data: [
+            [1589932800000, 0],
+            [1590073200000, 4],
+            [1590105600000, 0]
+          ]
         }
       ],
       chartOptions: {
@@ -50,14 +58,17 @@ export default {
             enabled: true
           }
         },
+        tooltip: {
+          shared: true,
+          followCursor: true
+        },
         responsive: [
           {
             breakpoint: 480,
             options: {
               legend: {
-                position: "bottom",
-                offsetX: -10,
-                offsetY: 0
+                position: "bottom"
+                // offsetX: -10,
               }
             }
           }
