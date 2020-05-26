@@ -24,7 +24,6 @@ export default {
         {
           name: "PRODUCT A",
           data: [
-            [1589932800000, 0],
             [1590073200000, 1],
             [1590105600000, 0]
           ]
@@ -32,7 +31,6 @@ export default {
         {
           name: "PRODUCT B",
           data: [
-            [1589932800000, 0],
             [1590073200000, 0],
             [1590105600000, 0]
           ]
@@ -40,7 +38,6 @@ export default {
         {
           name: "PRODUCT C",
           data: [
-            [1589932800000, 0],
             [1590073200000, 4],
             [1590105600000, 0]
           ]
@@ -49,53 +46,14 @@ export default {
       chartOptions: {
         chart: {
           type: "bar",
-          height: 350,
           stacked: true,
-          toolbar: {
-            show: true
-          },
-          zoom: {
-            enabled: true
-          }
         },
         tooltip: {
           shared: true,
-          followCursor: true
-        },
-        responsive: [
-          {
-            breakpoint: 480,
-            options: {
-              legend: {
-                position: "bottom"
-                // offsetX: -10,
-              }
-            }
-          }
-        ],
-        plotOptions: {
-          bar: {
-            horizontal: false
-          }
         },
         xaxis: {
           type: "datetime",
-          categories: [
-            "01/01/2011 GMT",
-            "01/02/2011 GMT",
-            "01/03/2011 GMT",
-            "01/04/2011 GMT",
-            "01/05/2011 GMT",
-            "01/06/2011 GMT"
-          ]
         },
-        legend: {
-          position: "right",
-          offsetY: 40
-        },
-        fill: {
-          opacity: 0.5
-        }
       }
     };
   }
